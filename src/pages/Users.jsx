@@ -29,7 +29,7 @@ const Users = () => {
     setLoading(true);
     try {
       const token = localStorage.getItem("token");
-      const response = await axios.get("http://localhost:5000/api/auth/getUsers", {
+      const response = await axios.get("https://backend-5ofy.onrender.com/api/auth/getUsers", {
         headers: { Authorization: `Bearer ${token}` },
       });
       setUsers(response.data);
@@ -57,7 +57,7 @@ const Users = () => {
 
       if (isEditMode && selectedUser) {
         await axios.put(
-          `http://localhost:5000/api/auth/updateUser/${selectedUser._id}`,
+          `https://backend-5ofy.onrender.com/api/auth/updateUser/${selectedUser._id}`,
           payload,
           {
             headers: {
@@ -69,7 +69,7 @@ const Users = () => {
         message.success("User updated successfully");
       } else {
         await axios.post(
-          "http://localhost:5000/api/auth/addUser",
+          "https://backend-5ofy.onrender.com/api/auth/addUser",
           {
             ...payload,
             email: values.email,
@@ -117,7 +117,7 @@ const Users = () => {
   const handleDelete = async () => {
     try {
       const token = localStorage.getItem("token");
-      await axios.delete(`http://localhost:5000/api/auth/deleteUser/${selectedUser._id}`, {
+      await axios.delete(`https://backend-5ofy.onrender.com/api/auth/deleteUser/${selectedUser._id}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       message.success("User deleted successfully");

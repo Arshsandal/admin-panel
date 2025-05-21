@@ -1,2 +1,2 @@
-const baseURL = "http://localhost:5000/"
+const baseURL = "https://backend-5ofy.onrender.com/"
 export default baseURL
