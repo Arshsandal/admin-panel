@@ -4,7 +4,6 @@ import Lottie from "lottie-react";
 import { useNavigate } from "react-router-dom";
 import Animation from "../assets/Animations/Animation-Spinner.json";
 import axiosInstance from "../../axiosInstance";  
-import baseURL from "../../config"; 
 import img from "../assets/Images/home.jpg"
 
 const { Title } = Typography;
@@ -24,7 +23,7 @@ const Login = () => {
   const onFinish = async (values) => {
     setLoading(true);
     try {
-      const response = await axiosInstance.post(`${baseURL}api/auth/login`, values);
+      const response = await axiosInstance.post(`https://backend-5ofy.onrender.com/api/auth/login`, values);
       if (response.data.success) {
           console.log(response.data,'responseresponse')
 
