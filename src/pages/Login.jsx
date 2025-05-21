@@ -24,7 +24,7 @@ const Login = () => {
   const onFinish = async (values) => {
     setLoading(true);
     try {
-      const response = await axiosInstance.post(`${baseURL}/api/auth/login`, values);
+      const response = await axiosInstance.post(`${baseURL}api/auth/login`, values);
       if (response.data.success) {
           console.log(response.data,'responseresponse')
 
