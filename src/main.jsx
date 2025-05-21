@@ -8,7 +8,7 @@ import Users from "./pages/Users";
 import Buses from "./pages/ViewBuses";
 import AddBus from "./pages/AddBuses";
 import ManageBuses from "./pages/ManageBuses";
-import ManageRoutes from "./pages/manageRoutes";
+import ManageRoutes from "./pages/ManageRoutes";
 import Login from "./pages/Login";
 import EditProfile from "./pages/EditProfile";
 import PrivateRoute from "./components/PrivateRoute";
