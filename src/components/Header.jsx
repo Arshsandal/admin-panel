@@ -56,7 +56,7 @@ const CustomHeader = () => {
       }}
     >
       <div style={{ fontSize: 20, fontWeight: "bold" }}>
-        Admin Panel Chandigarh Transport Undertaking
+        Admin Panel Transport For London
       </div>
       <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
         <span style={{ fontWeight: 500 }}>Welcom, {username}</span>
