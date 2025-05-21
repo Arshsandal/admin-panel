@@ -9,7 +9,7 @@ import {
   DeploymentUnitOutlined,
 } from "@ant-design/icons";
 import { Link } from "react-router-dom";
-import logo from "../assets/Images/Logo_White.svg"; // Adjust the path as needed
+import logo from "../assets/Images/Logo_white.svg"; // Adjust the path as needed
 
 const Sidebar = ({ selectedKey }) => {
   const userRole = localStorage.getItem("role");
